@@ -1,135 +1,243 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-body{
+body {
     background-color: #EFE4CE;
     color: #021B2E;
     font-size: 16px;
 }
-a{
+
+a {
     text-decoration: none;
 }
-*{
-    
+
+* {
+
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 600;
-    
+
 }
 
-h1{
+h1 {
     font-family: "Playfair Display";
     font-weight: 800;
-    font-size: 3.5rem;
+    font-size: 5rem;
 }
 
-nav{
+nav {
     background-color: #021B2E;
     color: #F9F9EF;
     width: 90%;
     margin: auto;
     max-width: 1800px;
-    padding: 0.9rem 2rem;
-    display: inline-flex;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
     gap: 30rem;
     border-radius: 3rem 3rem;
 }
 
-.logo{
+.logo {
     font-family: "Playfair Display";
     font-weight: 800;
 }
 
-nav>a{
+nav>a {
     color: #12BA9C;
     text-decoration: none;
 }
-nav ul{
+
+nav ul {
     list-style-type: none;
     display: flex;
     gap: 5rem;
 }
-nav>ul a{
+
+nav>ul a {
     color: #F9F9EF;
     text-decoration: none;
 }
 
-header{
+header {
     width: 95%;
     margin: auto;
     max-width: 1800px;
     display: flex;
 }
-header div{
-    width: 50%;
+
+.subtitulo {
+    font-size: 1.9rem;
+
 }
-header img{
-    width: 60%; 
-    
-}
-header a{
-    color: #021B2E;
+header p{
+    font-size: 1rem;
+    padding-bottom: 2rem;
+ 
 }
 
-.orange{
+header img {
+    float: right;
+    width: 67%;
+
+}
+
+header a {
+    color: #021B2E;
+    padding: 3rem 3rem;
+}
+
+.orange {
     background-color: #FF5710;
     color: #EFE4CE;
 }
-.teal{
+
+.teal {
     background-color: #12BA9C;
     color: #EFE4CE;
 }
 
-.button{
+.button {
     padding: 0.9rem 1.5rem;
     text-decoration: none;
     border-radius: 1.5rem 1.5rem;
 
 }
-.card{
+
+.card {
     background-color: #FAF9EF;
-    border-radius: 1rem 1rem;
+    border-radius: 3rem;
 }
-.card-horizontal{
+
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 2rem;
+    
+}
+
+
+
+.card-horizontal {
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.card-vertical {
     padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 2rem;
+    padding-bottom: 10rem;
+    padding-right: 2rem;
+    
+}
+.card-vertical img {
+    max-width: 100%; /* La imagen no excederá el ancho de la tarjeta */
+    height: 10rem; /* Mantiene la proporción de la imagen */
+    padding-left: 5rem;
+}
+.card-vertical p {
+    font-size: 1rem; /* Ajusta el tamaño de la fuente */
+    font-weight: bold;
+    padding: 0 10px; /* Espacio interno */
+    text-align: justify; /* Justifica el texto */
+    margin-bottom: 4rem; /* Espacio en la parte inferior del párrafo */
+    max-width: 300px; /* Limita el ancho del párrafo */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+.card-vertical div{
+    font-family: "Playfair Display";
+    font-weight: 800;
+    font-size: 3rem;
+    padding-left: 6.7rem;
 }
 
-.card-vertical{
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
 
-section{
+section {
     width: 95%;
     max-width: 1800px;
     margin: auto;
 
 }
-.booking input{
+
+
+.booking input {
     background-color: #EFE4CE;
     border-color: #ADA6A2;
     border-style: solid;
     border-width: 2px;
-    padding: 1.3rem 1.5rem;
-    border-radius: 1rem;
+    padding-top: 2rem;
+    padding: 2rem 4rem;
+    border-radius: 1.55rem;
+}
+.booking label{
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
 }
 
-.booking form{
+.booking form {
     display: flex;
     gap: 0.5rem;
 }
 
-.booking input[type="submit"]{
+
+.booking input[type="submit"] {
     background-color: #14ba9c;
+    font-size: 1rem;
     border-style: none;
+    padding: 2rem 3rem;
+    margin-top: 1.5rem;
+    margin-left: 13rem;
     color: #EFE4CE;
 }
-
-.label-input{
+.booking label[for="date"]{
+    font-weight: bold;
+}
+.booking input[type="email"]{
+    padding: 2rem 6rem;
+    margin-left: 4rem;
+}
+.booking label[for="email"]{
+    font-weight: bold;
+    margin-left: 4rem;
+}
+.booking input[type="time"]{
+    
+    padding: 2rem 6rem;
+    margin-left: 3rem;
+}
+.booking label[for="time"]{
+    font-weight: bold;
+    margin-left: 3rem;
+}
+.subtitulo-book{
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+}
+.label-input {
     display: flex;
     flex-direction: column;
+    
 }
+.delicious{
+    padding-top: 10rem;
+    padding-left: 45%;
+    font-size: 1.5rem;
+    color: #edaa37ff;
+    border-color: #ffddb0ff;
+    
+}
+
+.categories{
+    font-family: "Playfair Display";
+    font-weight: 800;
+    font-size: 3rem;
+    padding-left: 38.5%;
+    padding-bottom: 4rem;
+}
+
