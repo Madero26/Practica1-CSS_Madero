@@ -94,10 +94,12 @@ header a {
 .teal {
     background-color: #12BA9C;
     color: #EFE4CE;
+    padding-bottom: 3rem;
+
 }
 
 .button {
-    padding: 0.9rem 1.5rem;
+    padding: 0.9rem 3rem;
     text-decoration: none;
     border-radius: 1.5rem 1.5rem;
 
@@ -128,6 +130,10 @@ header a {
 }
 
 .card-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-top: 1rem;
     padding-left: 2rem;
     padding-bottom: 10rem;
@@ -136,8 +142,8 @@ header a {
 }
 .card-vertical img {
     max-width: 100%; /* La imagen no excederá el ancho de la tarjeta */
-    height: 10rem; /* Mantiene la proporción de la imagen */
-    padding-left: 5rem;
+    height: 9rem; /* Mantiene la proporción de la imagen */
+    padding-bottom: 2rem;
 }
 .card-vertical p {
     font-size: 1rem; /* Ajusta el tamaño de la fuente */
@@ -152,9 +158,17 @@ header a {
     font-family: "Playfair Display";
     font-weight: 800;
     font-size: 3rem;
-    padding-left: 6.7rem;
 }
 
+.covid-possition{
+    padding-bottom: 4rem;
+}
+.covid-possition a{
+    margin: auto;
+    display: flex;
+    text-align: center;
+    width: 5%;
+}
 
 section {
     width: 95%;
@@ -226,7 +240,7 @@ section {
 }
 .delicious{
     padding-top: 10rem;
-    padding-left: 45%;
+    padding-left: 47%;
     font-size: 1.5rem;
     color: #edaa37ff;
     border-color: #ffddb0ff;
@@ -237,7 +251,156 @@ section {
     font-family: "Playfair Display";
     font-weight: 800;
     font-size: 3rem;
-    padding-left: 38.5%;
+    padding-left: 41%;
     padding-bottom: 4rem;
+}
+.covid{
+    font-size: 1.5rem;
+    color: #14ba9c;
+    border-color: #91ccaaff;
+    padding-left: 44%;
+    padding-top: 10rem;
+}
+.sub-covid{
+    font-family: "Playfair Display";
+    font-weight: 800;
+    font-size: 3rem;
+    padding-left: 38.5%;
+    padding-bottom: 2rem;
+}
+.card-chef{
+    display: block;
+    background-color: #FAF9EF;
+    border-radius: 5rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    padding-bottom: 5rem;
+}
+.card-chef h2{
+    display: block;
+    margin-top: none;
+    font-family: "Playfair Display";
+    font-weight: 800;
+    font-size: 4rem;
+    padding-left: 7rem;
+    
+}
+.chef-column{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.card-chef img{
+    width: 45rem;
+    margin-bottom: 2rem;
+}
+.words{
+    font-size: 2rem;
+    color: #80cfb4ff;
+    font-weight: bold;
+    padding-top: 5rem;
+    padding-left: 15rem;
+    border-color: #b2d6c6ff;
+    
+}
+.lorem{
+    font-size: 1.2rem; /* Ajusta el tamaño de la fuente */
+    font-weight: bold;
+    text-align: justify; /* Justifica el texto */
+    padding-bottom: 4rem;
+    padding-right: 1rem;
+    max-width: 550px; /* Limita el ancho del párrafo */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+.our{
+    font-size: 2rem;
+    color: #f2653aff;
+    padding-top: 10rem;
+    padding-left: 44%;
+}
+.content01{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 15rem;
+    padding-bottom: 5rem;
+    
+}
+.content02{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content02 article{
+    width: 44%;
+}
+.content02 p{
+    font-size: 1.2rem; /* Ajusta el tamaño de la fuente */
+    font-weight: bold;
+    text-align: justify; /* Justifica el texto */
+    padding-bottom: 4rem;
+    padding-right: 5rem;
+    max-width: 480px; /* Limita el ancho del párrafo */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+
+.usuarios h2{
+    display: block;
+    font-family: "Playfair Display";
+    font-weight: 800;
+    font-size: 4rem;
+    padding-left: 37%;
+    padding-bottom: 2rem;
+}
+.card-customers{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 1rem;
+    box-shadow: -5px 5px#e0d5bcff ;
+}
+.card-customers img{
+    margin-top: 5rem;
+    width: 16rem;
+    height: 12rem;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+}
+.card-customers h4{
+    margin: 0,0;
+    display: block;
+    margin-top: none;
+    font-family: "Playfair Display";
+    font-weight: 800;
+    font-size: 2rem;
+}
+.card-customers p{
+    font-size: 1.2rem; /* Ajusta el tamaño de la fuente */
+    font-weight: bold;
+    text-align: justify; /* Justifica el texto */
+    padding-bottom: 4rem;
+    padding-right: 5rem;
+    max-width: 480px; /* Limita el ancho del párrafo */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+.nombres{
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 3rem;
+}
+.fecha-naci{
+    padding-top: 3.9rem;
+    font-size: 1rem;
+    color: #c7bfa7ff;
 }
 
